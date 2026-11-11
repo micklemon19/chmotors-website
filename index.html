@@ -1,122 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="CH Motors — breakdown and vehicle recovery, plus quality cars and vans for sale.">
-  <meta name="theme-color" content="#101114">
-  <title>CH MOTORS | Recovery • Cars • Vans</title>
-  <style>
-    :root{--bg:#101114;--panel:#191b20;--gold:#d7ad55;--gold2:#f0d28d;--text:#f6f5f2;--muted:#b8b8b8;--line:#303238}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
-    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
-    header{position:sticky;top:0;z-index:10;background:rgba(16,17,20,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .brand{font-size:1.55rem;font-weight:900;letter-spacing:2px}.brand span{color:var(--gold)}
-    nav{display:flex;gap:25px;font-size:.9rem;font-weight:700}nav a:hover,.textlink:hover{color:var(--gold)}
-    .button{display:inline-block;padding:13px 20px;border-radius:4px;background:var(--gold);color:#151515;font-weight:800;letter-spacing:.3px;border:1px solid var(--gold);transition:.2s}
-    .button:hover{background:var(--gold2);transform:translateY(-1px)}.button.outline{background:transparent;color:var(--gold)}
-    .hero{min-height:590px;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(10,11,13,.97) 0%,rgba(10,11,13,.83) 52%,rgba(10,11,13,.34) 100%),url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=2000&q=85') center/cover}
-    .hero:after{content:"";position:absolute;inset:auto 0 0;height:5px;background:linear-gradient(90deg,var(--gold),transparent)}
-    .hero-content{position:relative;z-index:1;max-width:700px;padding:85px 0}
-    .eyebrow{color:var(--gold);font-weight:800;letter-spacing:3px;text-transform:uppercase;font-size:.78rem}
-    h1{font-size:clamp(2.7rem,7vw,5.5rem);line-height:.98;margin:18px 0;letter-spacing:-2px}
-    h1 span{color:var(--gold)}.hero p{font-size:1.15rem;color:#ddd;max-width:570px;margin:24px 0 30px}
-    .actions{display:flex;gap:12px;flex-wrap:wrap}
-    section{padding:82px 0}.section-head{max-width:680px;margin-bottom:36px}.section-head h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:10px 0}.section-head p{color:var(--muted)}
-    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-    .card{background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden}
-    .card img{display:block;width:100%;height:245px;object-fit:cover}
-    .card-body{padding:27px}.card h3{font-size:1.45rem;margin:0 0 10px}.card p{color:var(--muted);margin:0 0 20px}
-    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:28px}
-    .feature{padding:22px;background:#15161a;border:1px solid var(--line);border-radius:6px}.feature strong{display:block;color:var(--gold);font-size:1.05rem;margin-bottom:5px}
-    .inventory{background:#15161a}.placeholder{border:1px dashed #555;border-radius:7px;padding:34px;text-align:center;color:var(--muted)}
-    .placeholder strong{display:block;color:var(--text);font-size:1.2rem;margin-bottom:8px}
-    .contact{background:linear-gradient(120deg,#1b1c20,#111215);border-top:1px solid var(--line)}
-    .contact-box{display:flex;justify-content:space-between;align-items:center;gap:28px}
-    .contact-box h2{font-size:clamp(2rem,4vw,3rem);margin:8px 0}.contact-box p{color:var(--muted);max-width:620px}
-    footer{padding:25px 0;border-top:1px solid var(--line);color:#999;font-size:.85rem}
-    footer .foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-    @media(max-width:760px){.nav{height:auto;min-height:70px;flex-wrap:wrap;padding:15px 0}nav{width:100%;justify-content:space-between;gap:10px;font-size:.8rem}.hero{min-height:540px}.grid,.features{grid-template-columns:1fr}.contact-box{display:block}.contact-box .button{margin-top:12px}section{padding:62px 0}}
-  </style>
-</head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="CH MOTORS — breakdown and vehicle recovery, vehicle tuning, and cars and vans for sale.">
+<meta name="theme-color" content="#101114"><title>CH MOTORS | Recovery • Tuning • Vehicle Sales</title>
+<style>
+:root{--bg:#101114;--panel:#191b20;--gold:#d7ad55;--gold2:#f0d28d;--text:#f6f5f2;--muted:#b8b8b8;--line:#303238}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(16,17,20,.96);border-bottom:1px solid var(--line)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:1.5rem;font-weight:900;letter-spacing:2px}.brand span,h1 span,.gold{color:var(--gold)}nav{display:flex;gap:20px;font-size:.83rem;font-weight:700}nav a:hover{color:var(--gold)}
+.button{display:inline-block;padding:12px 18px;border-radius:4px;background:var(--gold);color:#151515;font-weight:800;border:1px solid var(--gold)}.button.outline{background:transparent;color:var(--gold)}
+.hero{min-height:570px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(10,11,13,.97),rgba(10,11,13,.72)),url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=2000&q=85') center/cover}.hero-content{padding:85px 0;max-width:700px}.eyebrow{color:var(--gold);font-weight:800;letter-spacing:3px;text-transform:uppercase;font-size:.78rem}h1{font-size:clamp(2.8rem,7vw,5.5rem);line-height:1;margin:18px 0;letter-spacing:-2px}.hero p{font-size:1.15rem;color:#ddd;max-width:580px;margin:24px 0 30px}.actions{display:flex;gap:12px;flex-wrap:wrap}
+section{padding:76px 0}.section-head{max-width:700px;margin-bottom:32px}.section-head h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:10px 0}.section-head p,.card p,.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden}.card img{width:100%;height:235px;object-fit:cover;display:block}.card-body{padding:25px}.card h3{font-size:1.4rem;margin:0 0 8px}.card p{margin:0 0 18px}.inventory{background:#15161a}.placeholder{border:1px dashed #555;border-radius:7px;padding:34px;text-align:center;color:var(--muted)}.placeholder strong{display:block;color:var(--text);font-size:1.2rem;margin-bottom:8px}
+.contact{background:linear-gradient(120deg,#1b1c20,#111215);border-top:1px solid var(--line)}.contact-box{display:flex;justify-content:space-between;align-items:center;gap:28px}.contact-box h2{font-size:clamp(2rem,4vw,3rem);margin:8px 0}.contact-box p{color:var(--muted);max-width:650px}
+footer{padding:24px 0;border-top:1px solid var(--line);color:#999;font-size:.85rem}footer .foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:760px){.nav{padding:14px 0;flex-wrap:wrap}nav{width:100%;justify-content:space-between;gap:8px;font-size:.72rem}.grid{grid-template-columns:1fr}.hero{min-height:520px}section{padding:58px 0}.contact-box{display:block}.contact-box .button{margin-top:12px}}
+</style></head>
 <body>
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="#home" aria-label="CH Motors home">CH<span>.</span>MOTORS</a>
-    <nav aria-label="Main navigation">
-      <a href="#recovery">RECOVERY</a><a href="#sales">CARS & VANS</a><a href="#contact">CONTACT</a>
-    </nav>
-    <a class="button outline" href="#contact">GET IN TOUCH</a>
-  </div>
-</header>
-
+<header><div class="wrap nav">
+<a class="brand" href="#home">CH<span>.</span>MOTORS</a>
+<nav aria-label="Main navigation"><a href="#recovery">RECOVERY</a><a href="#sales">CARS & VANS</a><a href="#tuning">TUNING</a><a href="#contact">CONTACT</a></nav>
+<a class="button outline" href="#contact">GET IN TOUCH</a>
+</div></header>
 <main>
-  <section class="hero" id="home">
-    <div class="wrap hero-content">
-      <div class="eyebrow">Vehicle recovery • Car sales • Van sales</div>
-      <h1>CH <span>MOTORS</span></h1>
-      <p>Breakdown and vehicle recovery, alongside cars and vans for sale. Straightforward service, clear communication and help when you need it.</p>
-      <div class="actions">
-        <a class="button" href="#recovery">BREAKDOWN & RECOVERY</a>
-        <a class="button outline" href="#sales">BROWSE VEHICLES</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="recovery">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">Here when you need a hand</div>
-        <h2>Breakdown & <span style="color:var(--gold)">Recovery</span></h2>
-        <p>Need a vehicle moved or recovered? Get in touch with the details of your location, vehicle and where it needs to go. We'll discuss the job and availability with you.</p>
-      </div>
-      <div class="grid">
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=85" alt="Vehicle transporter on the road" loading="lazy">
-          <div class="card-body"><h3>Breakdown Recovery</h3><p>Assistance with moving a vehicle that has broken down or cannot be driven.</p><a class="textlink" href="#contact">Ask about recovery <span style="color:var(--gold)">→</span></a></div>
-        </article>
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=85" alt="Car being transported" loading="lazy">
-          <div class="card-body"><h3>Vehicle Transportation</h3><p>Enquire about transporting cars and vans from one location to another.</p><a class="textlink" href="#contact">Request a quote <span style="color:var(--gold)">→</span></a></div>
-        </article>
-      </div>
-      <div class="features">
-        <div class="feature"><strong>Cars & vans</strong>Recovery enquiries for a range of vehicle types.</div>
-        <div class="feature"><strong>Clear quotes</strong>Tell us what you need and ask for a price before booking.</div>
-        <div class="feature"><strong>Direct contact</strong>Speak to CH MOTORS about your recovery requirements.</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="inventory" id="sales">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">Find your next vehicle</div>
-        <h2>Cars & Vans <span style="color:var(--gold)">For Sale</span></h2>
-        <p>Browse our latest stock. Vehicle photographs, prices, mileage and specifications can be added here as each vehicle becomes available.</p>
-      </div>
-      <div class="placeholder">
-        <strong>Our latest stock is coming soon</strong>
-        Add your cars and vans here with photographs, asking prices, mileage and a short description.
-        <div style="margin-top:20px"><a class="button" href="#contact">ENQUIRE ABOUT A VEHICLE</a></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="wrap contact-box">
-      <div>
-        <div class="eyebrow">Contact CH MOTORS</div>
-        <h2>How can we <span style="color:var(--gold)">help?</span></h2>
-        <p>For breakdown and recovery enquiries, or to ask about a car or van for sale, get in touch. Add your preferred phone number, email address and business location before publishing.</p>
-      </div>
-      <a class="button" href="mailto:ADD-YOUR-EMAIL-HERE?subject=CH%20MOTORS%20Enquiry">EMAIL US</a>
-    </div>
-  </section>
+<section class="hero" id="home"><div class="wrap hero-content">
+<div class="eyebrow">Vehicle recovery • Vehicle tuning • Vehicle sales</div><h1>CH <span>MOTORS</span></h1>
+<p>Breakdown and vehicle recovery, vehicle tuning enquiries, and cars and vans for sale. Your one-stop destination for motoring services.</p>
+<div class="actions"><a class="button" href="#recovery">BREAKDOWN & RECOVERY</a><a class="button outline" href="#sales">CARS & VANS FOR SALE</a></div>
+</div></section>
+<section id="recovery"><div class="wrap">
+<div class="section-head"><div class="eyebrow">Here when you need a hand</div><h2>Breakdown & <span class="gold">Recovery</span></h2><p>Need a vehicle moved or recovered? Get in touch with your location, vehicle details and destination so we can discuss the job and availability.</p></div>
+<div class="grid">
+<article class="card"><img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=85" alt="Vehicle transporter on the road" loading="lazy"><div class="card-body"><h3>Breakdown Recovery</h3><p>Enquire about recovering a vehicle that has broken down or cannot be driven.</p><a class="gold" href="#contact">Ask about recovery →</a></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=85" alt="Car on the road" loading="lazy"><div class="card-body"><h3>Vehicle Transportation</h3><p>Ask about transporting cars and vans from one location to another.</p><a class="gold" href="#contact">Request a quote →</a></div></article>
+</div></div></section>
+<section class="inventory" id="sales"><div class="wrap">
+<div class="section-head"><div class="eyebrow">Find your next vehicle</div><h2>Cars & Vans <span class="gold">For Sale</span></h2><p>Browse our latest stock. Photos, prices, mileage and specifications can be added as vehicles become available.</p></div>
+<div class="placeholder"><strong>Our latest stock is coming soon</strong>Add your cars and vans here with photographs, asking prices, mileage and descriptions.<div style="margin-top:20px"><a class="button" href="#contact">ENQUIRE ABOUT A VEHICLE</a></div></div>
+</div></section>
+<section id="tuning"><div class="wrap">
+<div class="section-head"><div class="eyebrow">Make more of your vehicle</div><h2>Vehicle <span class="gold">Tuning</span></h2><p>Contact CH MOTORS to discuss vehicle tuning and performance upgrade enquiries. Tell us your vehicle make, model, year and what you would like to achieve.</p></div>
+<div class="grid">
+<article class="card"><img src="https://images.unsplash.com/photo-1552510920-7b7c7d1b2c3f?auto=format&fit=crop&w=1200&q=85" alt="Performance car" loading="lazy"><div class="card-body"><h3>ECU & Performance Tuning</h3><p>Enquire about ECU remapping and performance tuning options suitable for your vehicle.</p><a class="gold" href="#contact">Make a tuning enquiry →</a></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=1200&q=85" alt="Car detail" loading="lazy"><div class="card-body"><h3>Performance Upgrades</h3><p>Discuss possible upgrades and get advice on options for your car or van.</p><a class="gold" href="#contact">Discuss an upgrade →</a></div></article>
+</div><p class="muted" style="margin-top:18px;font-size:.9rem">All tuning work is subject to vehicle suitability and applicable roadworthiness, emissions and insurance requirements.</p>
+</div></section>
+<section class="contact" id="contact"><div class="wrap contact-box"><div><div class="eyebrow">Contact CH MOTORS</div><h2>How can we <span class="gold">help?</span></h2><p>For recovery, vehicle sales or tuning enquiries, get in touch. Add your business phone number, email address and location before publishing.</p></div><a class="button" href="mailto:ADD-YOUR-EMAIL-HERE?subject=CH%20MOTORS%20Enquiry">EMAIL US</a></div></section>
 </main>
-
-<footer><div class="wrap foot"><span>© <span id="year"></span> CH MOTORS. All rights reserved.</span><span>Breakdown & Recovery • Cars & Vans</span></div></footer>
+<footer><div class="wrap foot"><span>© <span id="year"></span> CH MOTORS. All rights reserved.</span><span>Recovery • Tuning • Cars & Vans</span></div></footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body>
-</html>
+</body></html>
